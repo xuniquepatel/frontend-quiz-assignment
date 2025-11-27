@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Test Your Knowledge – Quiz App
 
-## Getting Started
+A Figma-accurate frontend assignment built using **Next.js**, **Tailwind CSS**, and **Framer Motion**.  
+This project implements a multi-step quiz flow with animated transitions, gradient UI and a final score screen consistent with the provided design.
 
-First, run the development server:
+---
+
+## 📸 Live Demo  
+**URL:** https://frontend-quiz-assignment.vercel.app/
+
+## 📂 GitHub Repository  
+**Repo:** https://github.com/xuniquepatel/frontend-quiz-assignment
+
+---
+
+## 🚀 Tech Stack
+
+- Next.js 14 (App Router)
+- React 18
+- Tailwind CSS v4
+- Framer Motion
+- TypeScript
+
+---
+
+## 📁 Project Structure
+
+```
+frontend-quiz-assignment/
+├─ public/
+│  ├─ images/
+├─ src/
+│  ├─ app/
+│  │  ├─ layout.tsx
+│  │  ├─ page.tsx
+│  │  └─ globals.css
+│  ├─ components/
+│  │  ├─ layout/
+│  │  ├─ sections/
+│  │  ├─ quiz/
+│  │  └─ ui/
+│  ├─ lib/
+│  ├─ types/
+├─ package.json
+├─ next.config.mjs
+├─ tailwind.config.ts
+└─ README.md
+```
+
+---
+
+## 🧠 Features
+
+- Clean, pixel-accurate recreation of the Figma UI  
+- Multi-step quiz with animated transitions  
+- Progress bar updates with each question  
+- Each question uses the Figma gradient pattern  
+- Smooth animations using Framer Motion  
+- Result screen always animates from **0 → 62%**  
+- Restart button and final score screen logic  
+- Fully responsive and mobile-friendly  
+- Deploy-ready Next.js project  
+
+---
+
+## 🔧 Installation & Running Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/xuniquepatel/frontend-quiz-assignment
+cd frontend-quiz-assignment
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌐 Deployment on Vercel
 
-## Deploy on Vercel
+1. Push your project to GitHub  
+2. Go to https://vercel.com  
+3. Click *Add New → Project*  
+4. Select your repository  
+5. Keep all default Next.js settings  
+6. Click **Deploy**  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Every future `git push` will trigger an automatic redeployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
