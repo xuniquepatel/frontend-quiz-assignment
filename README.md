@@ -1,6 +1,6 @@
 # Test Your Knowledge – Quiz App
 
-A Figma-accurate frontend assignment built using **Next.js**, **Tailwind CSS**, and **Framer Motion**.  
+A Figma-accurate frontend assignment built using **Next.js**, **Tailwind CSS** and **Framer Motion**.  
 This project implements a multi-step quiz flow with animated transitions, gradient UI and a final score screen consistent with the provided design.
 
 ---
