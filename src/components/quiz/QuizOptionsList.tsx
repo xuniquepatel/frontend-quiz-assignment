@@ -21,7 +21,7 @@ type AnswerOptionProps = {
 
 function AnswerOption({ label, index, isActive, onClick }: AnswerOptionProps) {
   const base =
-    "w-full rounded-2xl border px-8 py-4 text-sm md:text-base text-[#2b6d95] transition";
+    "w-full rounded-2xl border px-10 py-4 text-center text-sm md:text-base text-[#2b6d95] transition";
   const bg = optionBg[index] ?? optionBg[optionBg.length - 1];
   const state = isActive
     ? "border-[#2b6d95] shadow-[0_0_0_1px_#2b6d95]"

@@ -23,12 +23,12 @@ export default function QuizNavigation({
   const isLast = currentIndex === total - 1;
 
   return (
-    <div className="mt-10 flex justify-end gap-3">
+    <div className="flex justify-end gap-3">
       <button
         onClick={onPrev}
         disabled={isFirst}
-        className={`flex h-10 w-10 items-center justify-center rounded-xl bg-[#d9edf8] text-[#1d607e] ${
-          isFirst ? "opacity-40" : "hover:bg-[#c5e0f1]"
+        className={`flex h-10 w-10 items-center justify-center rounded-xl bg-[#e2f1fb] text-[#2b6d95] shadow-[0_4px_12px_rgba(41,124,167,0.25)] ${
+          isFirst ? "opacity-40" : "hover:bg-[#d3e8f7]"
         }`}
       >
         ←
@@ -37,8 +37,8 @@ export default function QuizNavigation({
         <button
           onClick={onNext}
           disabled={!canGoNext}
-          className={`flex h-10 w-10 items-center justify-center rounded-xl bg-[#d9edf8] text-[#1d607e] ${
-            !canGoNext ? "opacity-40" : "hover:bg-[#c5e0f1]"
+          className={`flex h-10 w-10 items-center justify-center rounded-xl bg-[#e2f1fb] text-[#2b6d95] shadow-[0_4px_12px_rgba(41,124,167,0.25)] ${
+            !canGoNext ? "opacity-40" : "hover:bg-[#d3e8f7]"
           }`}
         >
           →
@@ -48,10 +48,10 @@ export default function QuizNavigation({
         <button
           onClick={onSubmit}
           disabled={!allAnswered}
-          className={`rounded-full px-10 py-3 text-sm font-medium ${
+          className={`ml-4 rounded-full px-10 py-2.5 text-sm font-medium shadow-[0_4px_12px_rgba(41,124,167,0.25)] ${
             allAnswered
-              ? "bg-[#d9edf8] text-[#1d607e] hover:bg-[#c5e0f1]"
-              : "bg-[#e3f1fa] text-[#9db8c8]"
+              ? "bg-[#e2f1fb] text-[#2b6d95] hover:bg-[#d3e8f7]"
+              : "bg-[#edf5fc] text-[#a7bfd2]"
           }`}
         >
           Submit
